@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zne-dH-fiK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zul-FD-mKw">
+            <objects>
+                <navigationController id="Zne-dH-fiK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i8R-aW-gj7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dxC-1U-Ba7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJP-Wr-53T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="square_integration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="w9T-eS-raa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="HbX-ex-PiZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square Integration for iOS Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIk-Xq-76d">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="JIk-Xq-76d" secondAttribute="trailing" id="CCg-TE-fAE"/>
+                                        <constraint firstAttribute="bottom" secondItem="JIk-Xq-76d" secondAttribute="bottom" id="byp-La-Bku"/>
+                                        <constraint firstItem="JIk-Xq-76d" firstAttribute="top" secondItem="HbX-ex-PiZ" secondAttribute="top" id="xhY-XP-7CB"/>
+                                        <constraint firstItem="JIk-Xq-76d" firstAttribute="leading" secondItem="HbX-ex-PiZ" secondAttribute="leading" id="yJ8-oi-fjO"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="5XN-Tl-sy0">
+                                        <rect key="frame" x="0.0" y="121.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5XN-Tl-sy0" id="aza-iw-EVp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rM0-Ld-Xhk"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jOF-J7-occ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ntV-Rb-eUD"/>
+                    <connections>
+                        <outlet property="tableView" destination="w9T-eS-raa" id="86E-PP-qqO"/>
+                        <segue destination="qlW-2V-YGQ" kind="show" identifier="showCreateOrder" id="mxw-oN-BBy"/>
+                        <segue destination="0OJ-4U-UG0" kind="show" identifier="showCharge" id="SBO-EG-2BO"/>
+                        <segue destination="YeR-MV-7Eq" kind="show" identifier="showCreateCustomer" id="mdw-gL-HFh"/>
+                        <segue destination="GKP-Md-Sli" kind="show" identifier="showRetrieveCustomer" id="I2a-ak-M1d"/>
+                        <segue destination="W3M-4Y-Hx5" kind="show" identifier="showCreateCustomerCard" id="ZDe-zt-zxQ"/>
+                        <segue destination="CUt-uz-YLv" kind="show" identifier="showDeleteCustomerCard" id="PLP-v9-17Q"/>
+                        <segue destination="IhZ-6v-ARZ" kind="show" identifier="showRetrieveCustomerCards" id="GyT-52-8QQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--CreateOrder-->
+        <scene sceneID="KlB-WL-jHY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateOrder" id="qlW-2V-YGQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zsR-No-FLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="-130"/>
+        </scene>
+        <!--Charge-->
+        <scene sceneID="q3S-6s-nS2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Charge" id="0OJ-4U-UG0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjG-s9-4gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="-58"/>
+        </scene>
+        <!--CreateCustomer-->
+        <scene sceneID="qvM-gP-bQR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateCustomer" id="YeR-MV-7Eq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FB-0W-KZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="66"/>
+        </scene>
+        <!--RetrieveCustomer-->
+        <scene sceneID="1pJ-Fo-kbL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RetrieveCustomer" id="GKP-Md-Sli" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTF-u8-VGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="168"/>
+        </scene>
+        <!--CreateCustomerCard-->
+        <scene sceneID="Zcb-Ez-Rtr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateCustomerCard" id="W3M-4Y-Hx5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9m-K5-Juh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160" y="252"/>
+        </scene>
+        <!--DeleteCustomerCard-->
+        <scene sceneID="CQh-83-Bos">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DeleteCustomerCard" id="CUt-uz-YLv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVE-iI-mn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179" y="350"/>
+        </scene>
+        <!--RetrieveCustomerCards-->
+        <scene sceneID="ePy-Wc-hG5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RetrieveCustomerCards" id="IhZ-6v-ARZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLu-0X-qv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176" y="416"/>
+        </scene>
+    </scenes>
+</document>

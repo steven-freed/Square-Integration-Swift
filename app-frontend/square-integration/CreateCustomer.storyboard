@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KHj-yb-7u7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Customer View Controller-->
+        <scene sceneID="BzI-QU-o8H">
+            <objects>
+                <viewController id="KHj-yb-7u7" customClass="CreateCustomerViewController" customModule="square_integration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZaS-sS-Bcs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf5-Go-n6c">
+                                <rect key="frame" x="123" y="277" width="127" height="30"/>
+                                <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZSr-Cx-1H7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Send Request">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createCustomer:" destination="KHj-yb-7u7" eventType="touchUpInside" id="pXe-AT-kZ5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Response" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PiD-th-I2f">
+                                <rect key="frame" x="15" y="346" width="343" height="296"/>
+                                <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F28-tj-Opn">
+                                <rect key="frame" x="15" y="119" width="343" height="150"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="VPy-X8-foQ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="{                                                                                                           &quot;givenName&quot;: &quot;">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Steve">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">",                                                                                       "emailAddress": "steve@gmail.com",                                                                     "phoneNumber":  "1-234-567-8990"                                                                                                                             } </string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6Q-Bk-jJN">
+                                <rect key="frame" x="15" y="315" width="343" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="9Ak-YQ-1aJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGg-Ch-r2P">
+                                <rect key="frame" x="16" y="41" width="343" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Jbq-q7-3FS"/>
+                                </constraints>
+                                <string key="text">Body takes 'location_id' for the location you are charging the customer for, 'amount' for total to charge and 'card_nonce' for the encrypted card data</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request Body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUS-1U-KNZ">
+                                <rect key="frame" x="15" y="20" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hf5-Go-n6c" firstAttribute="centerX" secondItem="z6Q-Bk-jJN" secondAttribute="centerX" id="Dsw-ka-T0Y"/>
+                            <constraint firstItem="z6Q-Bk-jJN" firstAttribute="trailing" secondItem="PiD-th-I2f" secondAttribute="trailing" id="KTa-8m-2Yj"/>
+                            <constraint firstItem="F28-tj-Opn" firstAttribute="top" secondItem="aGg-Ch-r2P" secondAttribute="bottom" constant="8" symbolic="YES" id="OH3-37-TCc"/>
+                            <constraint firstItem="F28-tj-Opn" firstAttribute="trailing" secondItem="z6Q-Bk-jJN" secondAttribute="trailing" id="OZW-vN-a6a"/>
+                            <constraint firstItem="z6Q-Bk-jJN" firstAttribute="top" secondItem="hf5-Go-n6c" secondAttribute="bottom" constant="8" symbolic="YES" id="RW3-K1-ZV6"/>
+                            <constraint firstItem="pUS-1U-KNZ" firstAttribute="leading" secondItem="YX5-BB-N8f" secondAttribute="leading" constant="15" id="S4q-gO-fij"/>
+                            <constraint firstItem="pUS-1U-KNZ" firstAttribute="trailing" secondItem="F28-tj-Opn" secondAttribute="trailing" id="TNt-yS-WmW"/>
+                            <constraint firstItem="pUS-1U-KNZ" firstAttribute="leading" secondItem="F28-tj-Opn" secondAttribute="leading" id="Ucy-AJ-85I"/>
+                            <constraint firstItem="PiD-th-I2f" firstAttribute="top" secondItem="z6Q-Bk-jJN" secondAttribute="bottom" constant="8" symbolic="YES" id="WlV-Is-3xk"/>
+                            <constraint firstItem="F28-tj-Opn" firstAttribute="leading" secondItem="z6Q-Bk-jJN" secondAttribute="leading" id="amt-bO-tBE"/>
+                            <constraint firstItem="hf5-Go-n6c" firstAttribute="top" secondItem="F28-tj-Opn" secondAttribute="bottom" constant="8" symbolic="YES" id="dg8-Xh-jqd"/>
+                            <constraint firstItem="YX5-BB-N8f" firstAttribute="bottom" secondItem="PiD-th-I2f" secondAttribute="bottom" constant="25" id="eNu-pW-1sM"/>
+                            <constraint firstItem="pUS-1U-KNZ" firstAttribute="top" secondItem="YX5-BB-N8f" secondAttribute="top" id="gus-aL-auA"/>
+                            <constraint firstItem="hf5-Go-n6c" firstAttribute="leading" secondItem="YX5-BB-N8f" secondAttribute="leading" constant="123" id="huc-lB-P62"/>
+                            <constraint firstItem="aGg-Ch-r2P" firstAttribute="trailing" secondItem="ZaS-sS-Bcs" secondAttribute="trailingMargin" id="jrc-wc-98d"/>
+                            <constraint firstItem="z6Q-Bk-jJN" firstAttribute="leading" secondItem="PiD-th-I2f" secondAttribute="leading" id="mQu-T2-5Jg"/>
+                            <constraint firstItem="YX5-BB-N8f" firstAttribute="trailing" secondItem="pUS-1U-KNZ" secondAttribute="trailing" constant="17" id="miZ-Pe-tkB"/>
+                            <constraint firstItem="aGg-Ch-r2P" firstAttribute="leading" secondItem="ZaS-sS-Bcs" secondAttribute="leadingMargin" id="zNO-1m-luW"/>
+                            <constraint firstItem="aGg-Ch-r2P" firstAttribute="top" secondItem="pUS-1U-KNZ" secondAttribute="bottom" id="zSC-kl-oaG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YX5-BB-N8f"/>
+                    </view>
+                    <connections>
+                        <outlet property="responseView" destination="PiD-th-I2f" id="sLp-ha-EAa"/>
+                        <outlet property="textView" destination="F28-tj-Opn" id="9yn-kv-PB4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zw8-wa-Zm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="93"/>
+        </scene>
+    </scenes>
+</document>

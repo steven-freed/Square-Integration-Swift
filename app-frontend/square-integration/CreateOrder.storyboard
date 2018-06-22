@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EIz-8p-zrr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Order View Controller-->
+        <scene sceneID="ge9-sJ-mMK">
+            <objects>
+                <viewController id="EIz-8p-zrr" customClass="CreateOrderViewController" customModule="square_integration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EaW-Yl-Wdf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request Body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fQ-sR-79N">
+                                <rect key="frame" x="16" y="20" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSR-Qd-WXK">
+                                <rect key="frame" x="16" y="49" width="343" height="54"/>
+                                <string key="text">Body takes one order item, you may modify the backend code to take more than one as input. NOTE: 'amount' is in cents for Squares Api</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHJ-Jc-1gx">
+                                <rect key="frame" x="124" y="282" width="127" height="30"/>
+                                <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NN9-OC-kx3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Send Request">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestOrder:" destination="EIz-8p-zrr" eventType="touchUpInside" id="l9g-u7-VOb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Response" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CQL-1U-Pi4">
+                                <rect key="frame" x="16" y="351" width="343" height="296"/>
+                                <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0C-xz-RoV">
+                                <rect key="frame" x="16" y="320" width="343" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="yhw-1E-l2J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iF4-uX-USd">
+                                <rect key="frame" x="16" y="111" width="343" height="167"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="cby-v9-6aD"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="{                                                                                                           &quot;locationId&quot;: &quot;">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="CBASEEBnqD04hj-YJC2kZpwXdrMgAQ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">",                                                                                       "lineItems": [                                                                       {                                                                                        "name":  "Coffee",                                                    "quantity": "2",                                                                "amount": 305                                                                         },                                                                                       </mutableString>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">{                                                                                        "name":  "Scone",                                              "quantity": "1",                                                                "amount": 275                                                                         }  </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">                                                                                        ]                                                                                            } </string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7fQ-sR-79N" firstAttribute="leading" secondItem="EaW-Yl-Wdf" secondAttribute="leadingMargin" id="2TU-oZ-ya2"/>
+                            <constraint firstItem="C0C-xz-RoV" firstAttribute="leading" secondItem="CQL-1U-Pi4" secondAttribute="leading" id="DHE-j7-NL2"/>
+                            <constraint firstItem="zHJ-Jc-1gx" firstAttribute="leading" secondItem="iwQ-Qi-1CN" secondAttribute="leading" constant="124" id="Dgg-1G-wWa"/>
+                            <constraint firstItem="pSR-Qd-WXK" firstAttribute="trailing" secondItem="iF4-uX-USd" secondAttribute="trailing" id="FuU-xK-rnb"/>
+                            <constraint firstItem="zHJ-Jc-1gx" firstAttribute="centerX" secondItem="C0C-xz-RoV" secondAttribute="centerX" id="Pcx-QD-a26"/>
+                            <constraint firstItem="zHJ-Jc-1gx" firstAttribute="top" secondItem="iF4-uX-USd" secondAttribute="bottom" constant="4" id="Pf4-Z3-9QF"/>
+                            <constraint firstItem="iF4-uX-USd" firstAttribute="leading" secondItem="C0C-xz-RoV" secondAttribute="leading" id="Txg-yN-sFd"/>
+                            <constraint firstItem="pSR-Qd-WXK" firstAttribute="leading" secondItem="iF4-uX-USd" secondAttribute="leading" id="Ub4-4N-5Qg"/>
+                            <constraint firstItem="7fQ-sR-79N" firstAttribute="leading" secondItem="pSR-Qd-WXK" secondAttribute="leading" id="YEs-F1-GJB"/>
+                            <constraint firstItem="C0C-xz-RoV" firstAttribute="top" secondItem="zHJ-Jc-1gx" secondAttribute="bottom" constant="8" symbolic="YES" id="ZOF-Ix-h5z"/>
+                            <constraint firstItem="pSR-Qd-WXK" firstAttribute="top" secondItem="7fQ-sR-79N" secondAttribute="bottom" constant="8" symbolic="YES" id="ZeJ-VB-T1i"/>
+                            <constraint firstItem="7fQ-sR-79N" firstAttribute="trailing" secondItem="EaW-Yl-Wdf" secondAttribute="trailingMargin" id="bar-lM-44L"/>
+                            <constraint firstItem="iF4-uX-USd" firstAttribute="top" secondItem="pSR-Qd-WXK" secondAttribute="bottom" constant="8" symbolic="YES" id="fDj-RC-gxl"/>
+                            <constraint firstItem="7fQ-sR-79N" firstAttribute="trailing" secondItem="pSR-Qd-WXK" secondAttribute="trailing" id="fTD-bd-vzb"/>
+                            <constraint firstItem="C0C-xz-RoV" firstAttribute="trailing" secondItem="CQL-1U-Pi4" secondAttribute="trailing" id="g6u-5s-Ofn"/>
+                            <constraint firstItem="iF4-uX-USd" firstAttribute="trailing" secondItem="C0C-xz-RoV" secondAttribute="trailing" id="hRH-eY-yiH"/>
+                            <constraint firstItem="7fQ-sR-79N" firstAttribute="top" secondItem="iwQ-Qi-1CN" secondAttribute="top" id="io6-eE-gdP"/>
+                            <constraint firstItem="CQL-1U-Pi4" firstAttribute="top" secondItem="C0C-xz-RoV" secondAttribute="bottom" constant="8" symbolic="YES" id="teT-yi-aTU"/>
+                            <constraint firstAttribute="bottom" secondItem="CQL-1U-Pi4" secondAttribute="bottom" constant="20" symbolic="YES" id="weG-mX-Tj4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iwQ-Qi-1CN"/>
+                    </view>
+                    <connections>
+                        <outlet property="responseView" destination="CQL-1U-Pi4" id="okX-Q8-1k8"/>
+                        <outlet property="sendRequestButton" destination="zHJ-Jc-1gx" id="0Y2-Zg-xiG"/>
+                        <outlet property="textView" destination="iF4-uX-USd" id="EO0-I8-TF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjt-BZ-PYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="162.3688155922039"/>
+        </scene>
+    </scenes>
+</document>
