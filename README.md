@@ -7,7 +7,7 @@ Square is a great company for small businesses to grow their business using Squa
             
 ## Backend:
 1. Nodejs functions using Square's 'square-connect' package from npm
-2. Api endpoints for Squares Api
+2. Api actions
 ```
 CustomersApi:
     Create Customer
