@@ -9,17 +9,17 @@ Square is a great company for small businesses to grow their business using Squa
 1. Nodejs functions using Square's 'square-connect' package from npm
 2. Api endpoints for Squares Api
 ```
-CustomersApi:<br />
+CustomersApi:
     Create Customer
     Retrieve Customer
     Retrieve Customer Cards
     Create Customer Card
     Delete Customer Card
                             
-OrdersApi:<br />
+OrdersApi:
     Create Order
                             
-TransactionsApi:<br />
+TransactionsApi:
     Charge
 ```
 ## Static-web-page
