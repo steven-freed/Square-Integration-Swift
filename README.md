@@ -8,7 +8,7 @@ Square is a great company for small businesses to grow their business using Squa
 ## Backend:
 1. Nodejs functions using Square's 'square-connect' package from npm
 2. Api endpoints for Squares Api
-
+```
 CustomersApi:<br />
     Create Customer
     Retrieve Customer
@@ -21,7 +21,7 @@ OrdersApi:<br />
                             
 TransactionsApi:<br />
     Charge
-
+```
 ## Static-web-page
 Host the index.html file on a website or you can host a static web page using Amazon Web Services S3 buckets. I would recommend using AWS because it is an easy way to interact with the file without having to worry about servers. Just make sure to secure the endpoint if using for production.
 
